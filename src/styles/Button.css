@@ -1,0 +1,43 @@
+button {
+  background: #e0e0e0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #bdbdbd; 
+}
+
+.primary {
+  color: #fff;
+  background: #2196f3;
+}
+
+.primary:hover {
+  background: #0069c0; 
+}
+
+.secondry {
+  color: #fff;
+  background: #607d8b;
+}
+
+.secondry:hover {
+  background: #34515e; 
+}
+
+.danger {
+  color: #fff;
+  background: #f44336;
+}
+
+.danger:hover {
+  background: #ba000d;
+}
+
