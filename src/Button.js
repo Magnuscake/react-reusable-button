@@ -2,33 +2,54 @@ import React from "react";
 
 import "./styles/Button.css";
 
-const btnVarient = (varient) => {
-  let styleClass = "";
+const btnColor = (color) => {
+  let colorClass = "";
 
-  switch (varient) {
+  switch (color) {
     case "primary":
-      styleClass = "primary";
+      colorClass = "primary";
       break;
 
     case "secondry":
-      styleClass = "secondry";
+      colorClass = "secondry";
       break;
 
     case "danger":
-      styleClass = "danger";
+      colorClass = "danger";
       break;
 
     default:
       return;
   }
-  return styleClass;
+  return colorClass;
 };
 
-const Button = (props) => {
+const btnVarient = (varient) => {
+  let varientClass = "";
+
+  switch (varient) {
+    case "outline":
+      varientClass = "outline";
+      break;
+
+    case "text":
+      varientClass = "text";
+      break;
+
+    default:
+      return;
+  }
+  return varientClass;
+};
+
+const Button = ({ color, varient, children, disabled }) => {
   return (
     <div>
-      <button className={btnVarient(props.color)}>
-        {!props.text ? "Default" : props.text}
+      <button
+        className={`${btnColor(color)} || ${btnVarient(varient)}`}
+        disabled={disabled}
+      >
+        {!children ? "Default" : children}
       </button>
     </div>
   );
