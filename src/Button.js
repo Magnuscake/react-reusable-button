@@ -2,54 +2,29 @@ import React from "react";
 
 import "./styles/Button.css";
 
-const btnColor = (color) => {
-  let colorClass = "";
-
-  switch (color) {
-    case "primary":
-      colorClass = "primary";
-      break;
-
-    case "secondry":
-      colorClass = "secondry";
-      break;
-
-    case "danger":
-      colorClass = "danger";
-      break;
-
-    default:
-      return;
-  }
-  return colorClass;
-};
-
-const btnVarient = (varient) => {
-  let varientClass = "";
-
-  switch (varient) {
-    case "outline":
-      varientClass = "outline";
-      break;
-
-    case "text":
-      varientClass = "text";
-      break;
-
-    default:
-      return;
-  }
-  return varientClass;
-};
-
-const Button = ({ color, varient, children, disabled }) => {
+const Button = ({
+  color,
+  varient,
+  children,
+  disableShadow,
+  disabled,
+  startIcon,
+  endIcon,
+  size,
+}) => {
+  const usePrimary = startIcon || endIcon || size ? "primary" : null;
   return (
     <div>
       <button
-        className={`${btnColor(color)} || ${btnVarient(varient)}`}
+        className={`btn ${color} ${varient} ${size} ${usePrimary}`}
         disabled={disabled}
+        style={{ boxShadow: !disableShadow ? null : "none" }}
       >
+        <i className="material-icons">{startIcon}</i>
+        &nbsp;
         {!children ? "Default" : children}
+        &nbsp;
+        <i className="material-icons">{endIcon}</i>
       </button>
     </div>
   );

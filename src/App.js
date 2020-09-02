@@ -28,6 +28,14 @@ const App = () => {
 
       <div className="section">
         <div className="btn-component">
+          <p>&lt;Button disableShadow /&gt;</p>
+          <Button disableShadow />
+        </div>
+      </div>
+
+      {/* Button with varients */}
+      <div className="section">
+        <div className="btn-component">
           <p>&lt;Button disabled /&gt;</p>
           <Button disabled />
         </div>
@@ -37,14 +45,51 @@ const App = () => {
         </div>
       </div>
 
+      {/* Button with icons */}
       <div className="section">
         <div className="btn-component">
-          <p>&lt;Button varient ="text" disabled /&gt;</p>
+          <p>&lt;Button startIcon="local_grocery_store" /&gt;</p>
+          <Button startIcon="local_grocery_store" />
+        </div>
+        <div className="btn-component">
+          <p>&lt;Button endIcon="local_grocery_store" /&gt;</p>
+          <Button endIcon="local_grocery_store" />
+        </div>
+      </div>
+
+      {/* Button with size */}
+      <div className="section">
+        <div className="btn-component">
+          <p>&lt;Button size="sm" /&gt;</p>
+          <Button size="sm" />
+        </div>
+        <div className="btn-component">
+          <p>&lt;Button size="md" /&gt;</p>
+          <Button size="md" />
+        </div>
+        <div className="btn-component">
+          <p>&lt;Button size="lg" /&gt;</p>
+          <Button size="lg" />
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="btn-component">
+          <p>&lt;Button color ="default" /&gt;</p>
           <Button color="default" />
         </div>
-        <Button color="primary">Primary</Button>
-        <Button color="secondry">Secondry</Button>
-        <Button color="danger">Danger</Button>
+        <div className="btn-component">
+          <p>&lt;Button color ="primary" /&gt;</p>
+          <Button color="primary">Primary</Button>
+        </div>
+        <div className="btn-component">
+          <p>&lt;Button color ="secondry" /&gt;</p>
+          <Button color="secondry">Secondry</Button>
+        </div>
+        <div className="btn-component">
+          <p>&lt;Button color ="danger" /&gt;</p>
+          <Button color="danger">Danger</Button>
+        </div>
       </div>
     </div>
   );
