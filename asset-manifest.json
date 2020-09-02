@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-reusable-button/static/css/main.9ad85c0e.chunk.css",
+    "main.js": "/react-reusable-button/static/js/main.b48f674d.chunk.js",
+    "main.js.map": "/react-reusable-button/static/js/main.b48f674d.chunk.js.map",
+    "runtime-main.js": "/react-reusable-button/static/js/runtime-main.7f7a9fae.js",
+    "runtime-main.js.map": "/react-reusable-button/static/js/runtime-main.7f7a9fae.js.map",
+    "static/js/2.c89f6e4f.chunk.js": "/react-reusable-button/static/js/2.c89f6e4f.chunk.js",
+    "static/js/2.c89f6e4f.chunk.js.map": "/react-reusable-button/static/js/2.c89f6e4f.chunk.js.map",
+    "index.html": "/react-reusable-button/index.html",
+    "precache-manifest.f09bf17a3ae5e9a5a316193809c7622c.js": "/react-reusable-button/precache-manifest.f09bf17a3ae5e9a5a316193809c7622c.js",
+    "service-worker.js": "/react-reusable-button/service-worker.js",
+    "static/css/main.9ad85c0e.chunk.css.map": "/react-reusable-button/static/css/main.9ad85c0e.chunk.css.map",
+    "static/js/2.c89f6e4f.chunk.js.LICENSE.txt": "/react-reusable-button/static/js/2.c89f6e4f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f7a9fae.js",
+    "static/js/2.c89f6e4f.chunk.js",
+    "static/css/main.9ad85c0e.chunk.css",
+    "static/js/main.b48f674d.chunk.js"
+  ]
+}
