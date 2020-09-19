@@ -1,14 +1,18 @@
 .container {
-  margin: 10px 17%;
+  margin: 10px 10%;
   font-family: Roboto, sans-serif;
 }
 
 .section {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 50px;
 }
 
 .section p {
   font-weight: 300;
+}
+
+.section .btn-component {
+  margin-right: 70px;
 }
